@@ -1,0 +1,11 @@
+ 
+#include<stdio.h>
+#include<string.h>
+ 
+int main() {
+  char a[900000] = {0}, b[900000] = {0};
+  scanf("%s", a);
+  strcpy(b, a);
+  printf("%s%s\n", b, strrev(a));
+  return 0;
+}
