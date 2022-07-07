@@ -1,0 +1,13 @@
+// KoDer :P
+ 
+#include<stdio.h>
+ 
+int main() {
+    char ins[2][10000] = {""};
+    scanf("%s", ins[0]);
+    if (ins[0][0] >= 'a' && ins[0][0] <= 'z') {
+        ins[0][0] -= 32;
+    }
+    printf("%s\n", ins[0]);
+    return 0;
+}
