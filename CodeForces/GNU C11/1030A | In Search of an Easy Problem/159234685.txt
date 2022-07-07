@@ -1,0 +1,16 @@
+// KoDer :P
+ 
+#include<stdio.h>
+ 
+int main() {
+    int a, b, count = 0;
+    scanf("%d", &a);
+    while (a--) {
+        scanf("%d", &b);
+        if (b == 1) {
+            count += 1;
+        }
+    }
+    (count != 0) ? printf("HARD\n") : printf("EASY\n");
+    return 0;
+}
