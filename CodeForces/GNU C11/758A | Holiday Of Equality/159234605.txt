@@ -1,0 +1,24 @@
+// KoDer :P
+ 
+#include<stdio.h>
+ 
+int main() {
+    int a[100] = {0}, b, big = -1;  // sml = 1000;
+    scanf("%d", &b);
+    if (b > 1) {
+        for (int i = 1; i <= b; i++) {
+            scanf("%d", &a[i]);
+            if (a[i] > big) {
+                big = a[i];
+            }
+        }
+        for (int i = 1; i <= b; i++) {
+            a[0] += big - a[i];
+        }
+        printf("%d\n", a[0]);
+    } else {
+        scanf("%d", &a[0]);
+        printf("0\n");
+    }
+    return 0;
+}
